@@ -27,6 +27,14 @@
           0.125em 0.125em 0.25em rgba(0,0,0,.15);
 }
 
+
+@media screen and (prefers-reduced-motion: reduce){
+    .skip a{
+      -webkit-transition: none; /* sets to default setting */
+      transition: none;        /* sets to default setting */
+     }
+  }
+
 @media (min-width: 800px) {
     :root {
         --fs-h1: 4.5rem;
@@ -139,7 +147,7 @@ h3 { font-size: var(--fs-h3) }
 header {
     display: flex;
     justify-content: space-between;
-    padding: 1em;
+    padding: 2em;
 }
 
 .logo {
@@ -327,6 +335,10 @@ header {
     margin: 0 auto;
 }
 
+.service > img{
+    justify-content: center;
+}
+
 @media (min-width: 800px) {
     .services {
         display: flex;
@@ -394,12 +406,13 @@ header {
 }
 
 .portfolio {
+    padding: 10px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
 .portfolio__item {
-    padding-bottom: 10vh;
+    padding: 10vh;
     background: var(--clr-accent);
     overflow: hidden;
 }
@@ -468,3 +481,23 @@ header {
 .social-list__link {
     padding: .5em;
 }
+
+.skip a{
+    background: white;
+    left: 0;
+    padding: 6px;
+    -webkit-transition: top 1s ease-out;
+    transition: top 1s ease-out;
+    z-index: 1;
+}
+
+.skip a{
+    position: absolute;
+    top: -40px;
+}
+
+.skip a:focus {
+    position: absolute;
+    top: 20px;
+  }
+  
