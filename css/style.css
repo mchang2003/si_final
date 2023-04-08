@@ -395,6 +395,14 @@ header {
         position: relative;
         z-index: 2;
     }
+    /* .portfolio a h4{
+        display: none;
+    }
+     */
+    .portfolio{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 /* My Work */
@@ -501,3 +509,33 @@ header {
     top: 20px;
   }
   
+
+.current_page {
+    border-bottom: 2px solid white;
+}
+
+
+@media (max-width: 800px) {
+    .portfolio a h4{
+        display: none;
+    }
+
+    .portfolio a img{
+        width: 100px;
+        height: auto;
+    }
+    
+    .portfolio .portfolio__item h3 {
+        display: none;
+    }
+
+    .portfolio .portfolio__item p {
+        display: none;
+    }
+
+    .portfolio{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
