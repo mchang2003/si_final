@@ -35,7 +35,7 @@
      }
   }
 
-@media (min-width: 800px) {
+@media (min-width: 750px) {
     :root {
         --fs-h1: 4.5rem;
         --fs-h2: 3.75rem;
@@ -339,7 +339,7 @@ header {
     justify-content: center;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 750px) {
     .services {
         display: flex;
         max-width: 1000px;
@@ -515,7 +515,7 @@ header {
 }
 
 
-@media (max-width: 800px) {
+@media (max-width: 750px) {
     .portfolio a h4{
         display: none;
     }
@@ -594,7 +594,7 @@ header {
     height: 5rem;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 750px) {
     .spacer{
         display: none;
     }
