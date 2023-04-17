@@ -303,7 +303,7 @@ header {
 /*  My services section  */
 
 .my-services {
-    background-color: var(--clr-light);
+    background-color: var(--clr-dark);
     background-image: url(../img/services-bg.jpg);
     background-size: cover;
     /* background-blend-mode: multiply; */
@@ -322,7 +322,7 @@ header {
     width: 2em;
     height: 1px;
     margin: 0.5em auto 1em;
-    background: var(--clr-light);
+    background: var(--clr-dark);
     opacity: 0.25;
 }
 
@@ -408,8 +408,8 @@ header {
 /* My Work */
 
 .my-work {
-    background-color: var(--clr-light);
-    color: var(--clr-dark);
+    background-color: var(--clr-dark);
+    color: var(--clr-light);
     text-align: center;    
 }
 
